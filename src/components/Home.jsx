@@ -42,7 +42,7 @@ const HomeView = () => {
 			{/* TITLE + PAIRS SELECTOR */}
 			<div className="flex items-center justify-around py-10 border-b border-gray-300 border-solid">
 				<p className="text-2xl font-semibold text-gray-600">
-					Coins Routes Charts
+					CoinRoutes Chart
 				</p>
 				<CurrencyPairsSelector />
 			</div>

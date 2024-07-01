@@ -9,6 +9,7 @@ export const AppProvider = ({ children }) => {
 	const [asks, setAsks] = useState([]);
 	const [bestBid, setBestBid] = useState(null);
 	const [bestAsk, setBestAsk] = useState(null);
+	const [increment, setIncrement] = useState("");
 
 	return (
 		<AppContext.Provider
@@ -23,6 +24,8 @@ export const AppProvider = ({ children }) => {
 				setBestBid,
 				bestAsk,
 				setBestAsk,
+				increment,
+				setIncrement
 			}}
 		>
 			{children}

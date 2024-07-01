@@ -4,7 +4,7 @@ export const connectToWebSocket = () => {
 	socket = new WebSocket('wss://stream.binance.com:9443/ws');
 
 	socket.onopen = () => {
-		console.log('Connected to Coinbase Pro WebSocket feed');
+		console.log('Connected to WebSocket feed');
 	};
 
 	socket.onclose = () => {
@@ -21,8 +21,6 @@ export const subscribeToChannel = (channel, speed, productId, callback) => {
 		console.error('Socket not connected or not ready.');
 		return;
 	}
-
-	console.log({ productId: productId[0] });
 
 	const subscribeMessage = {
 		method: 'SUBSCRIBE',
